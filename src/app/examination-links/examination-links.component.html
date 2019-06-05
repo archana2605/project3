@@ -1,0 +1,25 @@
+<div class="container  mt-3">
+    <div class="row">
+      <div class="col text-center p-3">
+        <h3 style="color:darkblue;">The Mock Examination Links For GATE 2019 Are Given Below</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <table class="table table-border table-hover table-striped" style="text-align:center;">
+              <tr>
+
+            <!-- <th>ID</th> -->
+            <th style="text-align:center;">TESTNAME</th>
+        </tr>
+        <tr *ngFor="let row of getcategory">
+          <td > <a routerLink="/login"> <i class="fas fa-hand-point-right"></i> {{row.testname}} </a></td>
+        </tr>
+          </table>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+  </div>

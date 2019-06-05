@@ -1,0 +1,20 @@
+.lineheight{
+    line-height:35px; 
+}
+.riborder{
+    border-right:1px solid black;
+}
+@media only screen and (max-width: 600px) {
+    img{
+        width: 100%;
+    }
+    .hidin {
+        display: none;
+    }
+    .riborder{
+     border-right:none;
+    }
+    li{
+        font-size: 12px;
+    }
+   } 

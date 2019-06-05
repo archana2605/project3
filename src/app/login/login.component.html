@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="offset-md-4 offset-sm-4 col-12 col-sm-6" style="padding-top: 100px;">
+        <div class="card">
+  <div class="card-header " style="color:white;background-color:#00a1ac;text-align:center;font-size: 20px;font-weight: bold;">
+    LOGIN
+  </div>
+  <div class="card-body">
+    <form action="" style="color:#00a1ac;">
+           <div class="form-group">
+        <label for="UserId">User Id:</label>
+        <input type="text" class="form-control" id="userid" name="Userid"  [(ngModel)]="Userid"  placeholder="Userid" required #userid="ngModel" maxlength="15" minlength="5"
+        >
+      </div>
+
+      <div class="alert alert-danger" *ngIf="userid .invalid==true && userid.dirty==true">please enter valid id </div>
+
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="Password" class="form-control" id="pwd" name="pwd" [(ngModel)]="pwd" placeholder="Password">
+      </div>
+
+      <button  routerLink="/instructions" type="submit" class="btn  btn-rounded btn-block my-4 waves-effect z-depth-0"  (click)="onclick()" style="background-color: #00a1ac;color:white;" >Submit</button>
+    </form>
+  </div>
+</div>
+     </div>
+
+  </div>
+</div>

@@ -1,0 +1,678 @@
+<app-header></app-header>
+<div class="container-fluid  ">
+
+  <div
+    class="row bg-dark text-warning"
+    style="padding-top: 10px; height: 40px;"
+  >
+    <div class="col-4 col-md-8">
+      <p>AE Aerospace Engineering Mock Examination 2019</p>
+    </div>
+    <div class="col-2 col-md-1"></div>
+    <div class="col-2 col-md-1">
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">QuestionPaper</h4>
+          <button
+            type="button"
+            class="close"
+            aria-label="Close"
+            (click)="modal.dismiss('Cross click')"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <img src="assets/question.jpg" alt=""> -->
+          Java is a complete programming language. In contrast, JavaScript is a
+          coded program that can be introduced to HTML pages. These two
+          languages are not at all inter-dependent and are designed for the
+          different intent. Java is an object - oriented programming (OOPS) or
+          structured programming language like C++ or C whereas JavaScript is a
+          client-side scripting language. 3. What are JavaScript Data Types?
+          Following are the JavaScript Data types: Number String Boolean Object
+          Undefined 4. What is the use of isNaN function? isNan function returns
+          true if the argument is not a number otherwise it is false. 5. Between
+          JavaScript and an ASP script, which is faster? JavaScript is faster.
+          JavaScript is a client-side language and thus it does not need the
+          assistance of the web server to execute. On the other hand, ASP is a
+          server-side language and hence is always slower than JavaScript.
+          Javascript now is also a server side language (nodejs). 6. What is
+          negative infinity? Negative Infinity is a number in JavaScript which
+          can be derived by dividing negative number by zero. 7. Is it possible
+          to break JavaScript Code into several lines? Breaking within a string
+          statement can be done by the use of a backslash, '\', at the end of
+          the first line Example: document.write("This is \a program"); And if
+          you change to a new line when not within a string statement, then
+          javaScript ignores break in line. Example: var x=1, y=2, z= x+y; The
+          above code is perfectly fine, though not advisable as it hampers
+          debugging. 8. Which company developed JavaScript? Netscape is the
+          software company who developed JavaScript. 9. What are undeclared and
+          undefined variables? Undeclared variables are those that do not exist
+          in a program and are not declared. If the program tries to read the
+          value of an undeclared variable, then a runtime error is encountered.
+          Undefined variables are those that are declared in the program but
+          have not been given any value. If the program tries to read the value
+          of an undefined variable, an undefined value is returned. 10. Write
+          the code for adding new elements dynamically? 11. What are global
+          variables? How are these variable declared and what are the problems
+          associated with using them? Global variables are those that are
+          available throughout the length of the code, that is, these have no
+          scope. The var keyword is used to declare a local variable or object.
+          If the var keyword is omitted, a global variable is declared. Example:
+          // Declare a global globalVariable = "Test"; The problems that are
+          faced by using global variables are the clash of variable names of
+          local and global scope. Also, it is difficult to debug and test the
+          code that relies on global variables. 12. What is a prompt box? A
+          prompt box is a box which allows the user to enter input by providing
+          a text box. Label and box will be provided to enter the text or
+          number. 13. What is 'this' keyword in JavaScript? 'This' keyword
+          refers to the object from where it was called. 14. Explain the working
+          of timers in JavaScript? Also elucidate the drawbacks of using the
+          timer, if any? Timers are used to execute a piece of code at a set
+          time or also to repeat the code in a given interval of time. This is
+          done by using the functions setTimeout, setInterval and clearInterval.
+          The setTimeout(function, delay) function is used to start a timer that
+          calls a particular function after the mentioned delay. The
+          setInterval(function, delay) function is used to repeatedly execute
+          the given function in the mentioned delay and only halts when
+          cancelled. The clearInterval(id) function instructs the timer to stop.
+          Timers are operated within a single thread, and thus events might
+          queue up, waiting to be executed. 15. Which symbol is used for
+          comments in Javascript? // for Single line comments and /* Multi Line
+          Comment */ 16. What is the difference between ViewState and
+          SessionState? 'ViewState' is specific to a page in a session.
+          'SessionState' is specific to user specific data that can be accessed
+          across all pages in the web application. 17. What is === operator? ===
+          is called as strict equality operator which returns true when the two
+          operands are having the same value without any type conversion. 18.
+          Explain how can you submit a form using JavaScript? To submit a form
+          using JavaScript use document.form[0].submit();
+          document.form[0].submit(); 19. Does JavaScript support automatic type
+          conversion? Yes JavaScript does support automatic type conversion, it
+          is the common way of type conversion used by JavaScript developers 20.
+          How can the style/class of an element be changed? It can be done in
+          the following way: document.getElementById("myText").style.fontSize =
+          "20?; or document.getElementById("myText").className = "anyclass"; 21.
+          Explain how to read and write a file using JavaScript? There are two
+          ways to read and write a file using JavaScript Using JavaScript
+          extensions Using a web page and Active X objects 22. What are all the
+          looping structures in JavaScript? Following are looping structures in
+          Javascript: For While do-while loops 23. What is called Variable
+          typing in Javascript? Variable typing is used to assign a number to a
+          variable and the same variable can be assigned to a string. Example
+        </div>
+      </ng-template>
+      <a (click)="open(content)" style="color: blue">QuestionPaper</a>
+    </div>
+
+    <div class="col-2 col-md-1  ">
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title " id="modal-basic-title">Instruction</h4>
+          <button
+            type="button"
+            class="close"
+            aria-label="Close"
+            (click)="modal.dismiss('Cross click')"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <img src="assets/question.jpg" alt=""> -->
+          Java is a complete programming language. In contrast, JavaScript is a
+          coded program that can be introduced to HTML pages. These two
+          languages are not at all inter-dependent and are designed for the
+          different intent. Java is an object - oriented programming (OOPS) or
+          structured programming language like C++ or C whereas JavaScript is a
+          client-side scripting language. 3. What are JavaScript Data Types?
+          Following are the JavaScript Data types: Number String Boolean Object
+          Undefined 4. What is the use of isNaN function? isNan function returns
+          true if the argument is not a number otherwise it is false. 5. Between
+          JavaScript and an ASP script, which is faster? JavaScript is faster.
+          JavaScript is a client-side language and thus it does not need the
+          assistance of the web server to execute. On the other hand, ASP is a
+          server-side language and hence is always slower than JavaScript.
+          Javascript now is also a server side language (nodejs). 6. What is
+          negative infinity? Negative Infinity is a number in JavaScript which
+          can be derived by dividing negative number by zero. 7. Is it possible
+          to break JavaScript Code into several lines? Breaking within a string
+          statement can be done by the use of a backslash, '\', at the end of
+          the first line Example: document.write("This is \a program"); And if
+          you change to a new line when not within a string statement, then
+          javaScript ignores break in line. Example: var x=1, y=2, z= x+y; The
+          above code is perfectly fine, though not advisable as it hampers
+          debugging. 8. Which company developed JavaScript? Netscape is the
+          software company who developed JavaScript. 9. What are undeclared and
+          undefined variables? Undeclared variables are those that do not exist
+          in a program and are not declared. If the program tries to read the
+          value of an undeclared variable, then a runtime error is encountered.
+          Undefined variables are those that are declared in the program but
+          have not been given any value. If the program tries to read the value
+          of an undefined variable, an undefined value is returned. 10. Write
+          the code for adding new elements dynamically? 11. What are global
+          variables? How are these variable declared and what are the problems
+          associated with using them? Global variables are those that are
+          available throughout the length of the code, that is, these have no
+          scope. The var keyword is used to declare a local variable or object.
+          If the var keyword is omitted, a global variable is declared. Example:
+          // Declare a global globalVariable = "Test"; The problems that are
+          faced by using global variables are the clash of variable names of
+          local and global scope. Also, it is difficult to debug and test the
+          code that relies on global variables. 12. What is a prompt box? A
+          prompt box is a box which allows the user to enter input by providing
+          a text box. Label and box will be provided to enter the text or
+          number. 13. What is 'this' keyword in JavaScript? 'This' keyword
+          refers to the object from where it was called. 14. Explain the working
+          of timers in JavaScript? Also elucidate the drawbacks of using the
+          timer, if any? Timers are used to execute a piece of code at a set
+          time or also to repeat the code in a given interval of time. This is
+          done by using the functions setTimeout, setInterval and clearInterval.
+          The setTimeout(function, delay) function is used to start a timer that
+          calls a particular function after the mentioned delay. The
+          setInterval(function, delay) function is used to repeatedly execute
+          the given function in the mentioned delay and only halts when
+          cancelled. The clearInterval(id) function instructs the timer to stop.
+          Timers are operated within a single thread, and thus events might
+          queue up, waiting to be executed. 15. Which symbol is used for
+          comments in Javascript? // for Single line comments and /* Multi Line
+          Comment */ 16. What is the difference between ViewState and
+          SessionState? 'ViewState' is specific to a page in a session.
+          'SessionState' is specific to user specific data that can be accessed
+          across all pages in the web application. 17. What is === operator? ===
+          is called as strict equality operator which returns true when the two
+          operands are having the same value without any type conversion. 18.
+          Explain how can you submit a form using JavaScript? To submit a form
+          using JavaScript use document.form[0].submit();
+          document.form[0].submit(); 19. Does JavaScript support automatic type
+          conversion? Yes JavaScript does support automatic type conversion, it
+          is the common way of type conversion used by JavaScript developers 20.
+          How can the style/class of an element be changed? It can be done in
+          the following way: document.getElementById("myText").style.fontSize =
+          "20?; or document.getElementById("myText").className = "anyclass"; 21.
+          Explain how to read and write a file using JavaScript? There are two
+          ways to read and write a file using JavaScript Using JavaScript
+          extensions Using a web page and Active X objects 22. What are all the
+          looping structures in JavaScript? Following are looping structures in
+          Javascript: For While do-while loops 23. What is called Variable
+          typing in Javascript? Variable typing is used to assign a number to a
+          variable and the same variable can be assigned to a string. Example
+        </div>
+      </ng-template>
+      <a (click)="open(content)" style="color: blue ;padding-left: 10px;"
+        >Instruction</a
+      >
+    </div>
+
+    <div class="col-2 col-md-1">
+      <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Usage data</h4>
+          <button
+            type="button"
+            class="close"
+            aria-label="Close"
+            (click)="modal.dismiss('Cross click')"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <img src="assets/question.jpg" alt=""> -->
+          Java is a complete programming language. In contrast, JavaScript is a
+          coded program that can be introduced to HTML pages. These two
+          languages are not at all inter-dependent and are designed for the
+          different intent. Java is an object - oriented programming (OOPS) or
+          structured programming language like C++ or C whereas JavaScript is a
+          client-side scripting language. 3. What are JavaScript Data Types?
+          Following are the JavaScript Data types: Number String Boolean Object
+          Undefined 4. What is the use of isNaN function? isNan function returns
+          true if the argument is not a number otherwise it is false. 5. Between
+          JavaScript and an ASP script, which is faster? JavaScript is faster.
+          JavaScript is a client-side language and thus it does not need the
+          assistance of the web server to execute. On the other hand, ASP is a
+          server-side language and hence is always slower than JavaScript.
+          Javascript now is also a server side language (nodejs). 6. What is
+          negative infinity? Negative Infinity is a number in JavaScript which
+          can be derived by dividing negative number by zero. 7. Is it possible
+          to break JavaScript Code into several lines? Breaking within a string
+          statement can be done by the use of a backslash, '\', at the end of
+          the first line Example: document.write("This is \a program"); And if
+          you change to a new line when not within a string statement, then
+          javaScript ignores break in line. Example: var x=1, y=2, z= x+y; The
+          above code is perfectly fine, though not advisable as it hampers
+          debugging. 8. Which company developed JavaScript? Netscape is the
+          software company who developed JavaScript. 9. What are undeclared and
+          undefined variables? Undeclared variables are those that do not exist
+          in a program and are not declared. If the program tries to read the
+          value of an undeclared variable, then a runtime error is encountered.
+          Undefined variables are those that are declared in the program but
+          have not been given any value. If the program tries to read the value
+          of an undefined variable, an undefined value is returned. 10. Write
+          the code for adding new elements dynamically? 11. What are global
+          variables? How are these variable declared and what are the problems
+          associated with using them? Global variables are those that are
+          available throughout the length of the code, that is, these have no
+          scope. The var keyword is used to declare a local variable or object.
+          If the var keyword is omitted, a global variable is declared. Example:
+          // Declare a global globalVariable = "Test"; The problems that are
+          faced by using global variables are the clash of variable names of
+          local and global scope. Also, it is difficult to debug and test the
+          code that relies on global variables. 12. What is a prompt box? A
+          prompt box is a box which allows the user to enter input by providing
+          a text box. Label and box will be provided to enter the text or
+          number. 13. What is 'this' keyword in JavaScript? 'This' keyword
+          refers to the object from where it was called. 14. Explain the working
+          of timers in JavaScript? Also elucidate the drawbacks of using the
+          timer, if any? Timers are used to execute a piece of code at a set
+          time or also to repeat the code in a given interval of time. This is
+          done by using the functions setTimeout, setInterval and clearInterval.
+          The setTimeout(function, delay) function is used to start a timer that
+          calls a particular function after the mentioned delay. The
+          setInterval(function, delay) function is used to repeatedly execute
+          the given function in the mentioned delay and only halts when
+          cancelled. The clearInterval(id) function instructs the timer to stop.
+          Timers are operated within a single thread, and thus events might
+          queue up, waiting to be executed. 15. Which symbol is used for
+          comments in Javascript? // for Single line comments and /* Multi Line
+          Comment */ 16. What is the difference between ViewState and
+          SessionState? 'ViewState' is specific to a page in a session.
+          'SessionState' is specific to user specific data that can be accessed
+          across all pages in the web application. 17. What is === operator? ===
+          is called as strict equality operator which returns true when the two
+          operands are having the same value without any type conversion. 18.
+          Explain how can you submit a form using JavaScript? To submit a form
+          using JavaScript use document.form[0].submit();
+          document.form[0].submit(); 19. Does JavaScript support automatic type
+          conversion? Yes JavaScript does support automatic type conversion, it
+          is the common way of type conversion used by JavaScript developers 20.
+          How can the style/class of an element be changed? It can be done in
+          the following way: document.getElementById("myText").style.fontSize =
+          "20?; or document.getElementById("myText").className = "anyclass"; 21.
+          Explain how to read and write a file using JavaScript? There are two
+          ways to read and write a file using JavaScript Using JavaScript
+          extensions Using a web page and Active X objects 22. What are all the
+          looping structures in JavaScript? Following are looping structures in
+          Javascript: For While do-while loops 23. What is called Variable
+          typing in Javascript? Variable typing is used to assign a number to a
+          variable and the same variable can be assigned to a string. Example
+        </div>
+      </ng-template>
+      <a (click)="open(content)" style="color: blue">Useagedata</a>
+    </div>
+  </div>
+  <!-- <div class="row" style="height: 40px; border: 1px solid gray;">
+      <div class="col">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Aerospace Eng
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <div class="row">
+    <div class="col-8 col-md-9 p-2" style="border-right: 3px solid gray">
+      <div class="dropdown" style="padding-bottom: 10px;">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Aerospace Engineering
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <!-- <b class="bg-info text-white">Aerospace Engineering</b> -->
+      <p class="border">
+        Section
+        <span style="    padding-left: 650px;">
+          <button (click)='startTimer()'>Start Timer</button>
+<button (click)='pauseTimer()'>Pause</button>
+
+<b>{{timeLeft}} Seconds Left....</b>
+
+        </span>
+      </p>
+
+      <div class="row" style="height:40px; border-bottom: 1px solid gray;">
+        <div class="col-1">
+          <a routerLink="/login"
+            ><i
+              class="fas fa-caret-left fa-2x"
+              style="    padding-top: 5px;
+                      padding-left: 63px;color:red;
+                  "
+            ></i
+          ></a>
+        </div>
+        <div class="col" style="color:green;">
+          <mat-tab-group>
+            <mat-tab label="GeneralAptitude..">
+
+                  <div class="row">
+                    <div class="col">
+                      <img src="assets/q1.png " alt="" width="70%">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <form action="/action_page.php">
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customRadio"
+                            name="example"
+                          />
+                          <label class="custom-control-label" for="customRadio"
+                            >A
+                          </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customRadio1"
+                            name="example"
+                          />
+                          <label class="custom-control-label" for="customRadio1"
+                            >B
+                          </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customRadio2"
+                            name="example"
+                          />
+                          <label class="custom-control-label" for="customRadio2"
+                            >C
+                          </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customRadio3"
+                            name="example"
+                          />
+                          <label class="custom-control-label" for="customRadio3"
+                            >D
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+
+            </mat-tab>
+            <mat-tab label="Aerospace Engeneering">
+
+              <div class="row">
+                <div class="col">
+                  <img src="assets/q2.png " alt="" width="70%">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <form action="/action_page.php">
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customRadio1"
+                        name="example1"
+                      />
+                      <label class="custom-control-label" for="customRadio1"
+                        ><img src="../assets/q2a1.png" alt="">
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customRadio2"
+                        name="example1"
+                      />
+                      <label class="custom-control-label" for="customRadio2"
+                        ><img src="../assets/q2a2.png" alt="">
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customRadio3"
+                        name="example1"
+                      />
+                      <label class="custom-control-label" for="customRadio3"
+                        ><img src="../assets/q2a3.png" alt="">
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customRadio4"
+                        name="example1"
+                      />
+                      <label class="custom-control-label" for="customRadio4"
+                        ><img src="../assets/q2a4.png" alt="">
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+      <div class="row " style="margin-top:465px;">
+        <div class="col">
+          <button class="btn btn-outline-info mr-3">
+            Mark for Review
+          </button>
+          <button class="btn btn-outline-info">
+            Clear Response
+          </button>
+          <button class="btn btn-info float-right">
+            Save & Next
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-4 col-md-3">
+      <div class="row border p-2">
+        <div class="col-6">
+          <img src="../assets/user.jpg" alt="" width="100%" />
+        </div>
+        <div class="col-6">
+          <h4>S Taylor</h4>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-2">
+          <div style=" background-color: #FF003C;height:45px; width:45px; border:1px solid black;line-height: 45px;border-top-left-radius:15px;border-top-right-radius:15px; " class="text-center">1</div>
+        </div>
+        <div class="col-3"><small>Answered</small></div>
+        <div class="col-2">
+          <div style=" background-color: #00C176;height:45px; width:45px; border:1px solid black;line-height: 45px;border-bottom-left-radius:15px;border-bottom-right-radius:15px; " class="text-center">1</div
+            >
+        </div>
+        <div class="col-4"><small>Not Answered</small></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-2">
+          <div style=" background-color: #D4D3D4;height:45px; width:45px; border:1px solid black;line-height: 45px; " class="text-center">1</div
+            >
+        </div>
+        <div class="col-3"><small>Not Visited</small></div>
+        <div class="col-2">
+            <div style=" background-color: #1C3E72;height:45px; width:45px; border:1px solid black;line-height: 45px;border-radius:50%; " class="text-center">1</div
+            >
+        </div>
+        <div class="col-4"><small>Marked for Review</small></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-2">
+            <div style=" background-color: blue;height:45px; width:45px; border:1px solid black;line-height: 45px;border-radius:50%; " class="text-center"><i class="fab fa-bootstrap bg-success"></i
+              ></div>
+
+        </div>
+        <div class="col">
+          <small
+            >Answered & Marked for review ( will be considered for
+            evaluation)</small
+          >
+        </div>
+      </div>
+      <div class="row bg-info text-white mt-2 p-1">
+        <div class="col">
+          <h4>General Aptitude</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <b>Choose a Question</b>
+        </div>
+      </div>
+      <section class=" p-2" style=" height:125px; overflow: auto;width: 100%">
+      <div class="row mt-2 ">
+        <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+          1
+        </div>
+        <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+            2
+          </div>
+          <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+              3
+            </div>
+            <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                4
+              </div>
+
+      </div>
+      <div class="row mt-2">
+          <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+            5
+          </div>
+          <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+              6
+            </div>
+            <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                7
+              </div>
+              <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                  8
+                </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+              5
+            </div>
+            <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                6
+              </div>
+              <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                  7
+                </div>
+                <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                    8
+                  </div>
+          </div>
+          <div class="row mt-2">
+              <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                5
+              </div>
+              <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                  6
+                </div>
+                <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                    7
+                  </div>
+                  <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                      8
+                    </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                  5
+                </div>
+                <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                    6
+                  </div>
+                  <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                      7
+                    </div>
+                    <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                        8
+                      </div>
+              </div>
+              <div class="row mt-2">
+                  <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                    5
+                  </div>
+                  <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                      6
+                    </div>
+                    <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                        7
+                      </div>
+                      <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                          8
+                        </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                      5
+                    </div>
+                    <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                        6
+                      </div>
+                      <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                          7
+                        </div>
+                        <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                            8
+                          </div>
+                  </div>
+                  <div class="row mt-2">
+                      <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                        5
+                      </div>
+                      <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                          6
+                        </div>
+                        <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                            7
+                          </div>
+                          <div class="col-2 mr-2 ml-2" style="border:1px solid black;background-color: #D4D3D4;width: 40px;height:40px;line-height: 40px;text-align: center">
+                              8
+                            </div>
+                    </div>
+      </section>
+      <div class="row mt-3">
+        <div class="col">
+          <button class="btn btn-info " routerLink="/summary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

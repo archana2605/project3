@@ -1,0 +1,13 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   h3{
+       font-size: 20px;
+   }
+   table{
+       width: 100%;
+   }
+   td{
+       font-size: 12px;
+   }
+
+}

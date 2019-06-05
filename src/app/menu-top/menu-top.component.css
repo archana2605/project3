@@ -1,0 +1,14 @@
+.menutop a{
+    color:white;
+    padding-left: 40px;
+}
+.menutop a:hover{
+    border-bottom:2px solid #DAE7DD;
+
+}
+@media only screen and (max-width: 600px) {
+   /* .nav{
+       display: none;
+   } */
+
+ }
